@@ -1,26 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="صفحة هبوط شخصية">
 	<meta name="author" content="Zakarea najjar">
 	<title>صفحة شخصية</title>
+	<link rel="icon" type="image/png" href="./imgs/portfolio.png">
 	<link rel="stylesheet" href="./assest/Bootstrap/css/bootstrap.rtl.min.css">
 	<link rel="stylesheet" href="./assest/FontAwesome/css/all.min.css">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-	<header class="footer">
-
+<body data-bs-spy="scroll"  data-bs-target="#navbar">
+	<nav class="navbar navbar-expand-lg fixed-top " id="navbar">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fa-solid fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+				<ul class="navbar-nav mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#header">عني</a>
+					</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#licence">الشهادات و المؤهلات</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#statistics">المهارات</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#gallery">اعمالي</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#testimonials">اراء العملاء</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact-info">تواصل معي</a>
+				</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<header class="header" id="header" >
+		<div class="container">
+			<div class="overlay text-center">
+				<div class="profile-img">
+					<img src="./imgs/profile.jpg" alt="profile">
+				</div>
+				<h1>علاء محمود <span>- مطور واجهات مستخدم</span></h1>
+				<ul class="list-inline">
+					<li class="list-inline-item"><a href="#"><i class="fa-brands fa-github"></i></a></li>
+					<li class="list-inline-item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+					<li class="list-inline-item"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+					<li class="list-inline-item"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+				</ul>
+				<h2>مطور واجهة الأستخدام مقيم بالقاهرة أعمل بتصميم وتتطوير منذ خمس سنوات</h2>
+				------
+				<p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام 
+					طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعي
+				</p>
+				<a href="./imgs/files/hi.pdf" class="cv"><i class="fa-solid fa-download"></i> تحميل السيرة الذاتية</a>
+			</div>
+		</div>
 	</header>
 	<main>
+		<section class="licence" id="licence" style="height: 1500px;">
 
+		</section>
+		<section class="statistics" id="statistics" style="height: 1500px;">
+
+		</section>
+		<section class="gallery" id="gallery" style="height: 1500px;">
+
+		</section>
+		<section class="testimonials" id="testimonials" style="height: 1500px;">
+
+		</section>
+		<section class="contact-info" id="contact-info" style="height: 1500px;">
+
+		</section>
 	</main>
-	<footer class="footer">
-
-	</footer>
-	<script src="./assest/Bootstrap/js/bootstrap.min.js"></script>
+	
+	<script src="./assest/Bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="./js/script.js"></script>
 </body>
 </html>

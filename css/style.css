@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:slnt,wght@-11..11,200..1000&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+nav.navbar {
+  transition: all 0.3s ease;
+}
+nav.navbar ul.navbar-nav a.nav-link {
+  font-size: 16px;
+  line-height: 60px;
+  color: #fff;
+  padding-right: 24px;
+  padding-left: 24px;
+  margin: 0 5px;
+}
+
+nav.navbar ul.navbar-nav a.nav-link:hover,
+nav.navbar ul.navbar-nav a.nav-link:active {
+  color: #196dd1;
+  background-color: #fff;
+}
+
+
+nav.noTransparent {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+nav.navbar.noTransparent ul.navbar-nav a.nav-link {
+  color: #196dd1;
+}
+
+nav.navbar.noTransparent ul.navbar-nav a.nav-link:hover,
+nav.navbar.noTransparent ul.navbar-nav a.nav-link.active {
+  color: #fff;
+  background-color: #196dd1;
+}
+
+header.header {
+  background-image: url(../imgs/bg-1.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 550px;
+}
+
+
+header.header .overlay {
+  background-color: rgba(5, 117, 230, 0.9);
+  transform: translateY(20%);
+  padding: 40px 60px;
+  color: #fff;
+  
+}
+
+header.header .overlay .profile-img img {
+  border: 5px solid #74ade7;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+header.header .overlay h1 {
+  font-size: 36px;
+  line-height: 33px;
+  color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+header.header .overlay h1 span {
+  font-size: 26px;
+  line-height: 33px;
+  color: #eee;
+}
+header.header .overlay ul {
+  margin: 0;
+  padding: 0;
+}
+header.header .overlay ul li.list-inline-item {
+  margin-bottom: 40px;
+}
+header.header .overlay ul li.list-inline-item a{
+  font-size: 24px;
+  line-height: 33px;
+  color: #021b79;
+}
+
+header.header .overlay h2 {
+  font-size: 15px;
+  line-height: 27px;
+  color: #fefeff;
+
+}
+
+header.header .overlay p {
+  color: #67aef4;
+  margin-bottom: 40px;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+header.header .overlay a.cv {
+  margin-bottom: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 33px;
+  display: block;
+}
+
+header.header .overlay a.cv i {
+  margin-left: 10px;
+}
