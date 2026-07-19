@@ -1,11 +1,23 @@
-function scrollfun(){
-  if(document.documentElement.scrollTop > 200) {
-    document.getElementById('navbar').classList.add('noTransparent')
-  }else{
-    document.getElementById('navbar').classList.remove('noTransparent')
-  }
+		$(window).scroll(function(){
+			if($(this).scrollTop() >= 200){
+				$('#navbar').addClass('noTransparent')
+			}else {
+				$('#navbar').removeClass('noTransparent')
+			}
+		});
+// إضافة الدالة لدعم المكتبات القديمة التي تعتمد عليها
+if (typeof jQuery.isNumeric !== 'function') {
+    jQuery.isNumeric = function(n) {
+        return !isNaN(parseFloat(n)) && isFinite(n);
+    };
 };
 
-window.onscroll = function(){
-  scrollfun()
-}
+
+  $(document).ready(function(){
+    $('.circle').circleProgress({
+      startAngle: -Math.PI/2,
+      fill: "#0575e6"
+    }).on('circle-animation-progress', function(event, progress, stepValue){
+      $(this).find('span').html(Math.round(stepValue * 100) + '%');
+    });
+  });
