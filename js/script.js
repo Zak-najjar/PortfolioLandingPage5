@@ -21,3 +21,6 @@ if (typeof jQuery.isNumeric !== 'function') {
       $(this).find('span').html(Math.round(stepValue * 100) + '%');
     });
   });
+
+
+  document.getElementById('currentyear').innerHTML= new Date().getFullYear();

@@ -8,7 +8,7 @@
 	<title>صفحة شخصية</title>
 	<link rel="icon" type="image/png" href="./imgs/portfolio.png">
 	<link rel="stylesheet" href="./assest/Bootstrap/css/bootstrap.rtl.min.css">
-	<link rel="stylesheet" href="./assest/FontAwesome/css/all.min.css">
+	<link rel="stylesheet" href="./assest/FontAwesome/css/all.min.css"/>
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body data-bs-spy="scroll"  data-bs-target="#navbar">
@@ -35,7 +35,7 @@
 					<a class="nav-link" href="#testimonials">اراء العملاء</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#contact-info">تواصل معي</a>
+					<a class="nav-link" href="#contact-us">تواصل معي</a>
 				</li>
 				</ul>
 			</div>
@@ -45,7 +45,7 @@
 		<div class="container">
 			<div class="overlay text-center">
 				<div class="profile-img">
-					<img src="./imgs/profile.jpg" alt="profile">
+					<img src="./imgs/profile.jpg" alt="profile" loading="lazy">
 				</div>
 				<h1>علاء محمود <span>- مطور واجهات مستخدم</span></h1>
 				<ul class="list-inline">
@@ -145,14 +145,201 @@
 				</div>
 			</div>
 		</section>
-		<section class="gallery" id="gallery" style="height: 1500px;">
+		<section class="gallery" id="gallery">
+			<div class="gallery-title text-center">
+				<h2>
+					<i class="fas fa-th-large d-block mx-auto"></i>
+					الاعمال السابقة
+				</h2>
+			</div>
+			<div class="container">
+				<div class="gallery-work text-center">
+					<input type="radio" name="radio-set-1" id="item-type-all" class="item-type-all d-none" checked="checked">
+					<label for="item-type-all" class="label-type-all">الكل</label>
 
+					<input type="radio" name="radio-set-1" id="item-type-1" class="item-type-1 d-none">
+					<label for="item-type-1" class="label-type-1">تصميم</label>
+
+					<input type="radio" name="radio-set-1" id="item-type-2" class="item-type-2 d-none">
+					<label for="item-type-2" class="label-type-2">برمجة مواقع</label>
+
+					<input type="radio" name="radio-set-1" id="item-type-3" class="item-type-3 d-none">
+					<label for="item-type-3" class="label-type-3">تصميم تطبيقات الموبايل</label>
+					<div class="row items">
+						<div class="col-sm-6 col-md-4 item item-type-1">
+							<img src="./imgs/gallery/1.jpg " alt="img1" loading="lazy">
+						</div>
+						<div class="col-sm-6 col-md-4 item item-type-3">
+							<img src="./imgs/gallery/2.jpg"  alt="img2" loading="lazy">
+						</div>
+						<div class="col-sm-6 col-md-4 item item-type-2">
+							<img src="./imgs/gallery/3.jpg "  alt="img3" loading="lazy">
+						</div>
+						<div class="col-sm-6 col-md-4 item item-type-2" loading="lazy">
+							<img src="./imgs/gallery/4.jpg" alt="img4">
+						</div>
+						<div class="col-sm-6 col-md-4 item item-type-1" loading="lazy">
+							<img src="./imgs/gallery/5.jpg" alt="img5">
+						</div>
+						<div class="col-sm-6 col-md-4 item item-type-3" loading="lazy">
+							<img src="./imgs/gallery/6.jpg" alt="img6">
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
-		<section class="testimonials" id="testimonials" style="height: 1500px;">
-
-		</section>
-		<section class="contact-info" id="contact-info" style="height: 1500px;">
-
+		<section class="contact-info">
+			<div class="overlay">
+				<div class="container">
+					<div class="testimonials" id="testimonials">
+						<div class="testimonials-title text-center">
+							<h2>أراء العملاء</h2>
+						</div>
+						<div class="slider">
+							<div id="carousel" class="carousel slide">
+								<div class="carousel-indicators">
+									<button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+									<button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+									<button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+									<button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+								</div>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<div class="carousel-caption">
+											<img src="./imgs/slider/3.jpg" class="rounded-circle" alt="img1" loading="lazy">
+											<h4>جورج يوسف <span> - مصمم ويب بشركة جوجل</span></h4>
+											<p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات .</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a href="#">
+														<i class="fa-brands fa-linkedin"></i>
+													</a>
+												</li>
+												<li class="list-inline-item">
+													<a href="#">
+														<i class="fa-brands fa-github"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="carousel-caption">
+											<img src="./imgs/slider/id-131964743710043437_0px.svg" class="rounded-circle" alt="img1" style="width: 100px; height: 100px;" loading="lazy">
+											<h4>لارا محسن <span> - مصمم ويب بشركة جوجل</span></h4>
+											<p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات .</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a href="#">
+														<i class="fa-brands fa-linkedin"></i>
+													</a>
+												</li>
+												<li class="list-inline-item">
+													<a href="#">
+														<i class="fa-brands fa-github"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="carousel-caption">
+											<img src="./imgs/slider/1.jpg"	class="rounded-circle" alt="img1" loading="lazy">
+											<h4>محمد هانى <span> - مصمم ويب بشركة جوجل</span></h4>
+											<p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات .</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a href="#">
+														<i class="fa-brands fa-linkedin"></i>
+													</a>
+												</li>
+												<li class="list-inline-item">
+													<a href="#">
+														<i class="fa-brands fa-github"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="carousel-caption">
+											<img src="./imgs/slider/id-131964743710043437_0px.svg" class=" rounded-circle" alt="img1" style="width: 100px; height: 100px;" loading="lazy">
+											<h4>نهى احمد <span> - مصمم ويب بشركة جوجل</span></h4>
+											<p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات .</p>
+											<ul class="list-inline">
+												<li class="list-inline-item">
+													<a href="#">
+														<i class="fa-brands fa-linkedin"></i>
+													</a>
+												</li>
+												<li class="list-inline-item">
+													<a href="#">
+														<i class="fa-brands fa-github"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+									<i class="fa-solid fa-angle-right"></i>	
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+									<i class="fa-solid fa-angle-left"></i>	
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="contact-us" id="contact-us">
+						<div class="contact-title text-center">
+							<h2>تواصل معنا</h2>
+						</div>
+						<div class="contact-info">
+							<div class="row">
+								<div class="col-md-8">
+									<form class="contact-form row">
+										<div class="col-sm-6">
+											<input type="text" class="form-control" placeholder="الاسم" required>
+										</div>
+										<div class="col-sm-6">
+											<input type="email" class="form-control" placeholder="البريد الالكتروني" required>
+										</div>
+										<div class="col-12">
+											<textarea class="form-control" rows="10" required>نص الرسالة او تفاصيل المشروع</textarea>
+										</div>
+										<button type="submit" class="form-control">ارسال</button>
+									</form>
+								</div>
+								<div class="col-md-4">
+									<ul class="contact-details">
+										<li>
+											<a href="#">
+												<i class="fa-solid fa-phone"></i>
+												123456789
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fa-regular fa-envelope"></i>
+												Support@Alaa.com
+											</a>
+										</li>
+									</ul>
+									<hr>
+									<ul class="contact-social list-inline">
+										<li class="list-inline-item"><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+										<li class="list-inline-item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+										<li class="list-inline-item"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="copy-right text-center">
+						<p>جميع الحقوق محفوظة <span id="currentyear"></span>&copy;</p>
+					</div>
+				</div>
+			</div>
 		</section>
 	</main>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0/jquery.min.js" integrity="sha512-YuCuk5nNmVIUfKROKeV3fpZZ5Vt9vsnq8nExr5JwEJc2r1YDVmDfujcq373eHIzjqdxwCzoKpxngIaAdRUyg3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
