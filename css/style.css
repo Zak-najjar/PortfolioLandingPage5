@@ -490,24 +490,21 @@ section.contact-info .contact-us .contact-info .contact-form input::placeholder 
 }
 
 
-section.contact-info .contact-us .contact-info .contact-form .col-md-6 {
-  position: relative;
-}
-section.contact-info .contact-us .contact-info .contact-form .col-md-6 {
+section.contact-info .contact-us .contact-info .contact-form .col-sm-6 {
   position: relative;
 }
 
 /* 2. التنسيقات المشتركة للأيقونات باستخدام الـ ::before */
-section.contact-info .contact-us .contact-form .col-md-6{
+section.contact-info .contact-us .contact-form .col-sm-6{
   position: relative;
 }
-section.contact-info .contact-us .contact-form .col-md-6::before {
+section.contact-info .contact-us .contact-form .col-sm-6::before {
   font-family: "Font Awesome 7 Free";
   font-weight: 900;
   font-size: 18px;
   color: #0575e6;
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   right: 25px; /* المسافة من اليمين داخل الـ col */
   z-index: 10;
@@ -516,10 +513,10 @@ section.contact-info .contact-us .contact-form .col-md-6::before {
 }
 
 /* 3. تخصيص أيقونات الحقول */
-section.contact-info .contact-us .contact-form .col-md-6:first-child::before {
+section.contact-info .contact-us .contact-form .col-sm-6:first-child::before {
   content: "\f007"; /* user */
 }
-section.contact-info .contact-us .contact-form .col-md-6:nth-child(2)::before {
+section.contact-info .contact-us .contact-form .col-sm-6:nth-child(2)::before {
   content: "\f0e0"; /* envelope */
 }
 
