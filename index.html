@@ -297,15 +297,15 @@
 						<div class="contact-info">
 							<div class="row">
 								<div class="col-md-8">
-									<form class="contact-form row">
+									<form class="contact-form row" id="cotactForm">
 										<div class="col-sm-6">
-											<input type="text" class="form-control" placeholder="الاسم" required>
+											<input type="text" class="form-control" name="name" placeholder="الاسم" required>
 										</div>
 										<div class="col-sm-6">
-											<input type="email" class="form-control" placeholder="البريد الالكتروني" required>
+											<input type="email" class="form-control" name="email" placeholder="البريد الالكتروني" required>
 										</div>
 										<div class="col-12">
-											<textarea class="form-control" rows="10" required>نص الرسالة او تفاصيل المشروع</textarea>
+											<textarea class="form-control" rows="5"  placeholder="نص الرسالة او تفاصيل المشروع" required></textarea>
 										</div>
 										<button type="submit" class="form-control">ارسال</button>
 									</form>
@@ -342,8 +342,10 @@
 			</div>
 		</section>
 	</main>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0/jquery.min.js" integrity="sha512-YuCuk5nNmVIUfKROKeV3fpZZ5Vt9vsnq8nExr5JwEJc2r1YDVmDfujcq373eHIzjqdxwCzoKpxngIaAdRUyg3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js" integrity="sha512-6kvhZ/39gRVLmoM/6JxbbJVTYzL/gnbDVsHACLx/31IREU4l3sI7yeO0d4gw8xU5Mpmm/17LMaDHOCf+TvuC2Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="./assest/jquery/jquery.min.js"></script>
+	<script src="./assest/jquery validation/jquery.validate.min.js"></script>
+	<script src="./assest/jquery validation/localization/messages_ar.min.js"></script>
+	<script src="./assest/jquery circle progress/circle-progress.min.js"></script>
 	<script src="./assest/Bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="./js/script.js"></script>
 </body>
